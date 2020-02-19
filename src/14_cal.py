@@ -32,8 +32,12 @@ import calendar
 from datetime import datetime
 
 selection = len(sys.argv)
-selectedMonth = sys.argv[1]
-selectedYear = sys.argv[2]
+
+if (selection > 1):
+    selectedMonth = sys.argv[1]
+    selectedYear = sys.argv[2]
+
+# if selection == 3 else undefined
 
 if(selection == 3):
     month = selectedMonth
